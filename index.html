@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html id='html' lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='css/bootstrap.css' />
+    <link rel='stylesheet' href='css/style.css' />
+    <link rel="stylesheet" href='img/social/css/all.css'>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=c0be7b34-29ff-4e36-85b2-a43a76e9e8c1&lang=ru_RU" type="text/javascript"></script>
+    <title></title>
+</head>
+
+<body>
+    <!-- Loading -->
+    <div class="loading">
+        <img src="img/badges/logo.png">
+        <h2>отель</h2>
+        <h1>Империал</h1>
+    </div>
+    <!-- Modal window -->
+    <div id='modalWindow' class="modalWindow">
+        <div onclick="closeMenu()" class="modalWindow-closeButton">
+            <div class="modalWindow-closeButton-one"></div>
+            <div class="modalWindow-closeButton-one"></div>
+        </div>
+        <ul class="modalWindow-list">
+            <a class='scrolling-a' href="#aboutUs">
+                <li onclick="closeMenu()" class="modalWindow-list-li">О нас</li>
+            </a>
+            <a class='scrolling-a' href="#rooms">
+                <li onclick="closeMenu()" class="modalWindow-list-li">Номера</li>
+            </a>
+            <a class='scrolling-a' href="#breakfast">
+                <li onclick="closeMenu()" class="modalWindow-list-li">Завтрак</li>
+            </a>
+            <a class='scrolling-a' href="#contact">
+                <li onclick="closeMenu()" class="modalWindow-list-li lastLi">Связаться с нами</li>
+            </a>
+        </ul>
+    </div>
+    <!-- Main -->
+    <div class="mySection section-main">
+        <div class="section-main-bg"></div>
+        <img src="img/images/breakfast.jpg" style="width: 1px; height: 1px; position: absolute; top: 0; left: 0;">
+        <div class="myContainer section-main-container">
+            <div class="section-main-container-header">
+                <div id='openMenuButton' class="section-main-container-header-menu">
+                    <div class="section-main-container-header-menu-one"></div>
+                    <div class="section-main-container-header-menu-one"></div>
+                    <div class="section-main-container-header-menu-one"></div>
+                </div>
+                <img src="img/badges/logo.png" class="section-main-container-header-logo">
+                <a target="blank"
+                    href="https://www.booking.com/hotel/ru/imperial-cherkessk.ru.html#availability_target"><button
+                        class="bookButton section-main-container-header-button">
+                        <p>забронировать</p>
+                    </button></a>
+            </div>
+            <div class="section-main-container-content">
+                <div class="section-main-container-content-namePlace">
+                    <a target="blank" href="https://www.instagram.com/imperial__09/?hl=ru"><i
+                            class="fab fa-instagram section-main-container-content-namePlace-inst"></i></a>
+                    <p class="section-main-container-content-namePlace-name">Империал</p>
+                </div>
+            </div>
+            <div class="section-main-container-footer">
+                <a class='scrolling-a' href="#aboutUs"><i class="fas fa-arrow-down"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- About us -->
+    <div id='aboutUs' class="mySection section-aboutUs">
+        <div class="myContainer section-aboutUs-container">
+            <div id='AboutUsShow' class="section-aboutUs-container-description">
+                <p class="section-aboutUs-container-description-header">О нас</p>
+                <p class="section-aboutUs-container-description-txt">Отель «Империал» располагается в живописном месте
+                    города Черкесска в Карачаево-Черкесской республике. Эта новая уютная гостиница будет очень
+                    комфортной для различных гостей нашего города. Здесь можно полюбоваться потрясающими Видами горных
+                    вершин, погулять, ознакомиться с достопримечательностями города.</p>
+            </div>
+        </div>
+    </div>
+    <div id='rooms' class="mySection section-rooms">
+        <div class="myContainer section-rooms-container">
+            <div class="section-rooms-container-sliderBox">
+                <div class="section-rooms-container-sliderBox-descr">
+                    <button class='nextSlideButtonFaded'><i
+                        class="fas fa-angle-right"></i></button>
+                    <p class='section-rooms-container-sliderBox-descr-header'>Стандартный одноместный номер</p>
+                    <p class='section-rooms-container-sliderBox-descr-txt'>В нашем уютном одноместном номере вы можете
+                        повесить вещи в шкаф, отдохнуть на односпальной кровати, заварить чай в электрическом чайнике и
+                        посмотреть интересующий канал на телевизоре с плоским экраном. В вашем распоряжении кабельные и
+                        спутниковые каналы. Для вашего удобства в номере установлен кондиционер и москитная сетка на
+                        окнах, чтобы ничто не мешало вам дышать свежим воздухом. Если захотите пообедать или поужинать у
+                        себя в номере, можете воспользоваться холодильником и обеденным уголком. О том, что приготовить
+                        на завтрак можете не переживать: для гостей отеля Империал за отдельную плату сервируется
+                        континентальный завтрак.
+                        В номере есть собственная ванная комната с феном и бесплатными туалетно-косметическими
+                        принадлежностями. Также к услугам гостей бесплатная частная парковка и платный трансфер от/до
+                        аэропорта.</p>
+                    <a target="blank"
+                        href="https://www.booking.com/hotel/ru/imperial-cherkessk.ru.html#room_239462501"><button
+                            class="bookButton section-rooms-container-sliderBox-descr-button">
+                            <p>посмотреть</p>
+                        </button></a>
+                </div>
+                <div class="section-rooms-container-sliderBox-rightSide">
+                    <button class='nextSlideButton'><i
+                            class="fas fa-angle-right"></i></button>
+                    <div class="section-rooms-container-sliderBox-rightSide-advantages">
+                        <div>
+                            <i class="fas fa-cube"></i>
+                            <p>25 м<sup>2</sup></p>
+                        </div>
+                        <div>
+                            <i class="fas fa-bed"></i>
+                            <p>1 Односпальная<br>кровать</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-hotel"></i>
+                            <p>Вид на<br>город</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-snowflake"></i>
+                            <p>Кондиционер</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-tv"></i>
+                            <p>Плоский<br>телевизор</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-wifi"></i>
+                            <p>Бесплатный<br>WiFi</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-shower"></i>
+                            <p>Душ</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-parking"></i>
+                            <p>Бесплатная<br>парковка</p>
+                        </div>
+                    </div>
+                    <div class="section-rooms-container-sliderBox-rightSide-imagePlace">
+                        
+                        <img class='sliderImg sliderImg1 activeImage' src="img/images/rooms/1/1.jpg">
+                        <img class='sliderImg sliderImg1' src="img/images/rooms/1/2.jpg">
+                        <img class='sliderImg sliderImg1' src="img/images/rooms/1/3.jpg">
+                        <img class='sliderImg sliderImg1' src="img/images/rooms/1/4.jpg">
+                        <img class='sliderImg sliderImg1' src="img/images/rooms/1/5.jpg">
+                        <img class='sliderImg sliderImg1' src="img/images/rooms/1/6.jpg">
+                        <img class='sliderImg sliderImg1' src="img/images/rooms/1/7.jpg">
+                        <div class="section-rooms-container-sliderBox-rightSide-imagePlace-buttons">
+                            <button class='prevImageButton'><span>&larr;</span></button>
+                            <button class='nextImageButton'><span>&rarr;</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-rooms-container-sliderBox">
+                <div class="section-rooms-container-sliderBox-descr">
+                    <button class='nextSlideButtonFaded'><i
+                        class="fas fa-angle-right"></i></button>
+                    <p class='section-rooms-container-sliderBox-descr-header'>Двухместный номер с 1 кроватью</p>
+                    <p class='section-rooms-container-sliderBox-descr-txt'>В нашем уютном двухместном номере вы можете
+                        повесить вещи в шкаф, отдохнуть на большой двуспальной кровати, заварить чай в электрическом
+                        чайнике и посмотреть интересующий канал на телевизоре с плоским экраном. В вашем распоряжении
+                        кабельные и спутниковые каналы. Для вашего удобства в номере установлен кондиционер и москитная
+                        сетка на окнах, чтобы ничто не мешало вам дышать свежим воздухом. Если захотите пообедать или
+                        поужинать у себя в номере, можете воспользоваться холодильником и обеденным уголком. О том, что
+                        приготовить на завтрак можете не переживать: для гостей отеля Империал за отдельную плату
+                        сервируется
+                        континентальный завтрак. В номере есть собственная ванная комната с феном и бесплатными
+                        туалетно-косметическими принадлежностями. Также к услугам гостей бесплатная частная парковка и
+                        платный трансфер от/до аэропорта.</p>
+                    <a target="blank"
+                        href="https://www.booking.com/hotel/ru/imperial-cherkessk.ru.html#room_239462502"><button
+                            class="bookButton section-rooms-container-sliderBox-descr-button">
+                            <p>посмотреть</p>
+                        </button></a>
+                </div>
+                <div class="section-rooms-container-sliderBox-rightSide">
+                    <button class='nextSlideButton'><i
+                            class="fas fa-angle-right"></i></button>
+                    <div class="section-rooms-container-sliderBox-rightSide-advantages">
+                        <div>
+                            <i class="fas fa-cube"></i>
+                            <p>25 м<sup>2</sup></p>
+                        </div>
+                        <div>
+                            <i class="fas fa-bed"></i>
+                            <p>1 Большая<br>двуспальная кровать</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-hotel"></i>
+                            <p>Вид на<br>город</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-snowflake"></i>
+                            <p>Кондиционер</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-tv"></i>
+                            <p>Плоский<br>телевизор</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-wifi"></i>
+                            <p>Бесплатный<br>WiFi</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-shower"></i>
+                            <p>Душ</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-parking"></i>
+                            <p>Бесплатная<br>парковка</p>
+                        </div>
+                    </div>
+                    <div class="section-rooms-container-sliderBox-rightSide-imagePlace">                     
+                        <img class='sliderImg sliderImg2 activeImage' src="img/images/rooms/2/1.jpg">
+                        <img class='sliderImg sliderImg2' src="img/images/rooms/2/2.jpg">
+                        <img class='sliderImg sliderImg2' src="img/images/rooms/2/3.jpg">
+                        <img class='sliderImg sliderImg2' src="img/images/rooms/2/4.jpg">
+                        <div class="section-rooms-container-sliderBox-rightSide-imagePlace-buttons">
+                            <button class='prevImageButton'><span>&larr;</span></button>
+                            <button class='nextImageButton'><span>&rarr;</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-rooms-container-sliderBox">
+                <div class="section-rooms-container-sliderBox-descr">
+                    <button class='nextSlideButtonFaded'><i
+                        class="fas fa-angle-right"></i></button>
+                    <p class='section-rooms-container-sliderBox-descr-header'>Улучшенный двухместный номер с 1 кроватью
+                    </p>
+                    <p class='section-rooms-container-sliderBox-descr-txt'>В нашем уютном двухместном номере вы можете
+                        повесить вещи в шкаф, отдохнуть на очень большой двуспальной кровати, заварить чай в
+                        электрическом чайнике и посмотреть интересующий канал на телевизоре с плоским экраном. В вашем
+                        распоряжении кабельные и спутниковые каналы. В качестве приятного бонуса, номер оснащён
+                        диваном-кроватью и ковровым покрытием. Для вашего удобства в номере установлен кондиционер и
+                        москитная сетка на окнах, чтобы ничто не мешало вам дышать свежим воздухом. Если захотите
+                        пообедать или поужинать у себя в номере, можете воспользоваться холодильником и обеденным
+                        уголком. О том, что приготовить на завтрак можете не переживать: для гостей отеля Империал за
+                        отдельную плату
+                        сервируется континентальный завтрак. В номере есть собственная ванная комната с феном и
+                        бесплатными туалетно-косметическими принадлежностями. Также к услугам гостей бесплатная частная
+                        парковка и платный трансфер от/до аэропорта.</p>
+                    <a target="blank"
+                        href="https://www.booking.com/hotel/ru/imperial-cherkessk.ru.html#room_239462503"><button
+                            class="bookButton section-rooms-container-sliderBox-descr-button">
+                            <p>посмотреть</p>
+                        </button></a>
+                </div>
+                <div class="section-rooms-container-sliderBox-rightSide">
+                    <button class='nextSlideButton'><i
+                            class="fas fa-angle-right"></i></button>
+                    <div class="section-rooms-container-sliderBox-rightSide-advantages">
+                        <div>
+                            <i class="fas fa-cube"></i>
+                            <p>25 м<sup>2</sup></p>
+                        </div>
+                        <div>
+                            <i class="fas fa-bed"></i>
+                            <p>1 Очень большая<br>двуспальная кровать</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-hotel"></i>
+                            <p>Вид на<br>город</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-snowflake"></i>
+                            <p>Кондиционер</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-tv"></i>
+                            <p>Плоский<br>телевизор</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-wifi"></i>
+                            <p>Бесплатный<br>WiFi</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-shower"></i>
+                            <p>Душ</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-parking"></i>
+                            <p>Бесплатная<br>парковка</p>
+                        </div>
+                    </div>
+                    <div class="section-rooms-container-sliderBox-rightSide-imagePlace">                  
+                        <img class='sliderImg sliderImg3 activeImage' src="img/images/rooms/3/1.jpg">
+                        <img class='sliderImg sliderImg3' src="img/images/rooms/3/2.jpg">
+                        <img class='sliderImg sliderImg3' src="img/images/rooms/3/3.jpg">
+                        <div class="section-rooms-container-sliderBox-rightSide-imagePlace-buttons">
+                            <button class='prevImageButton'><span>&larr;</span></button>
+                            <button class='nextImageButton'><span>&rarr;</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-rooms-container-sliderBox">
+                <div class="section-rooms-container-sliderBox-descr">
+                    <button class='nextSlideButtonFaded'><i
+                        class="fas fa-angle-right"></i></button>
+                    <p class='section-rooms-container-sliderBox-descr-header'>Стандартный трёхместный номер</p>
+                    <p class='section-rooms-container-sliderBox-descr-txt'>В нашем уютном трёхместном номере вы можете
+                        повесить вещи в шкаф, отдохнуть на одной из 3 односпальных кроватей, заварить чай в
+                        электрическом чайнике, присесть на диван и посмотреть интересующий канал на телевизоре с плоским
+                        экраном. В вашем распоряжении кабельные и спутниковые каналы. Для вашего удобства в номере
+                        установлен кондиционер и москитная сетка на окнах, чтобы ничто не мешало вам дышать свежим
+                        воздухом. Если захотите пообедать или поужинать у себя в номере, можете воспользоваться
+                        холодильником и обеденным уголком. О том, что приготовить на завтрак можете не переживать: для
+                        гостей отеля Империал за отдельную плату сервируется континентальный завтрак. В номере есть
+                        собственная ванная
+                        комната с феном и бесплатными туалетно-косметическими принадлежностями. Также к услугам гостей
+                        Бесплатная частная парковка и платный трансфер от/до аэропорта.</p>
+                    <a target="blank"
+                        href="https://www.booking.com/hotel/ru/imperial-cherkessk.ru.html#room_239462504"><button
+                            class="bookButton section-rooms-container-sliderBox-descr-button">
+                            <p>посмотреть</p>
+                        </button></a>
+                </div>
+                <div class="section-rooms-container-sliderBox-rightSide">
+                    <button class='nextSlideButton'><i
+                            class="fas fa-angle-right"></i></button>
+                    <div class="section-rooms-container-sliderBox-rightSide-advantages">
+                        <div>
+                            <i class="fas fa-cube"></i>
+                            <p>25 м<sup>2</sup></p>
+                        </div>
+                        <div>
+                            <i class="fas fa-bed"></i>
+                            <p>3 Односпальные<br>кровати</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-hotel"></i>
+                            <p>Вид на<br>город</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-snowflake"></i>
+                            <p>Кондиционер</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-tv"></i>
+                            <p>Плоский<br>телевизор</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-wifi"></i>
+                            <p>Бесплатный<br>WiFi</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-shower"></i>
+                            <p>Душ</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-parking"></i>
+                            <p>Бесплатная<br>парковка</p>
+                        </div>
+                    </div>
+                    <div class="section-rooms-container-sliderBox-rightSide-imagePlace">                     
+                        <img class='sliderImg sliderImg4 activeImage' src="img/images/rooms/4/1.jpg">
+                        <img class='sliderImg sliderImg4' src="img/images/rooms/4/2.jpg">
+                        <img class='sliderImg sliderImg4' src="img/images/rooms/4/3.jpg">
+                        <div class="section-rooms-container-sliderBox-rightSide-imagePlace-buttons">
+                            <button class='prevImageButton'><span>&larr;</span></button>
+                            <button class='nextImageButton'><span>&rarr;</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-rooms-container-sliderBox">
+                <div class="section-rooms-container-sliderBox-descr">
+                    <button class='nextSlideButtonFaded'><i
+                        class="fas fa-angle-right"></i></button>
+                    <p class='section-rooms-container-sliderBox-descr-header'>Бюджетный двухместный номер с 2 отдельными
+                        кроватями</p>
+                    <p class='section-rooms-container-sliderBox-descr-txt'>В нашем уютном двухместном номере вы можете
+                        повесить вещи в шкаф, отдохнуть на двуспальной или большой двуспальной кровати, заварить чай в
+                        электрическом чайнике и посмотреть интересующий канал на телевизоре с плоским экраном. В вашем
+                        распоряжении кабельные и спутниковые каналы. Для вашего удобства в номере установлен кондиционер
+                        и москитная сетка на окнах, чтобы ничто не мешало вам дышать свежим воздухом. Если захотите
+                        пообедать или поужинать у себя в номере, можете воспользоваться холодильником и обеденным
+                        уголком. О том, что приготовить на завтрак можете не переживать: для гостей отеля Империал за
+                        отдельную плату
+                        сервируется континентальный завтрак. В номере есть собственная ванная комната с феном и
+                        бесплатными туалетно-косметическими принадлежностями. Также к услугам гостей бесплатная частная
+                        парковка и платный трансфер от/до аэропорта.</p>
+                    <a target="blank"
+                        href="https://www.booking.com/hotel/ru/imperial-cherkessk.ru.html#room_239462505"><button
+                            class="bookButton section-rooms-container-sliderBox-descr-button">
+                            <p>посмотреть</p>
+                        </button></a>
+                </div>
+                <div class="section-rooms-container-sliderBox-rightSide">
+                    <button class='nextSlideButton'><i
+                            class="fas fa-angle-right"></i></button>
+                    <div class="section-rooms-container-sliderBox-rightSide-advantages">
+                        <div>
+                            <i class="fas fa-cube"></i>
+                            <p>25 м<sup>2</sup></p>
+                        </div>
+                        <div>
+                            <i class="fas fa-bed"></i>
+                            <p>1 Большая двуспальная<br>кровать или 1<br>двуспальная кровать</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-hotel"></i>
+                            <p>Вид на<br>город</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-snowflake"></i>
+                            <p>Кондиционер</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-tv"></i>
+                            <p>Плоский<br>телевизор</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-wifi"></i>
+                            <p>Бесплатный<br>WiFi</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-shower"></i>
+                            <p>Душ</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-parking"></i>
+                            <p>Бесплатная<br>парковка</p>
+                        </div>
+                    </div>
+                    <div class="section-rooms-container-sliderBox-rightSide-imagePlace">                      
+                        <img class='sliderImg sliderImg5 activeImage' src="img/images/rooms/5/1.jpg">
+                        <img class='sliderImg sliderImg5' src="img/images/rooms/5/2.jpg">
+                        <img class='sliderImg sliderImg5' src="img/images/rooms/5/3.jpg">
+                        <div class="section-rooms-container-sliderBox-rightSide-imagePlace-buttons">
+                            <button class='prevImageButton'><span>&larr;</span></button>
+                            <button class='nextImageButton'><span>&rarr;</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-rooms-container-sliderBox">
+                <div class="section-rooms-container-sliderBox-descr">
+                    <button class='nextSlideButtonFaded'><i
+                        class="fas fa-angle-right"></i></button>
+                    <p class='section-rooms-container-sliderBox-descr-header'>Стандартный семейный номер</p>
+                    <p class='section-rooms-container-sliderBox-descr-txt'>В нашем уютном семейном номере вы можете
+                        повесить вещи в шкаф, отдохнуть на односпальной или очень большой двуспальной кровати, заварить
+                        чай в электрическом чайнике, посмотреть интересующий канал на телевизоре с плоским экраном. В
+                        вашем распоряжении кабельные и спутниковые каналы. Для вашего удобства в номере установлен
+                        Кондиционер и москитная сетка на окнах, чтобы ничто не мешало вам дышать свежим воздухом. Если
+                        захотите пообедать или поужинать у себя в номере, можете воспользоваться холодильником и
+                        обеденным уголком. О том, что приготовить на завтрак можете не переживать: для гостей отеля
+                        Империал за отдельную плату сервируется континентальный завтрак. В номере есть собственная
+                        ванная комната с феном и
+                        бесплатными туалетно-косметическими принадлежностями. Также к услугам гостей бесплатная частная
+                        парковка и платный трансфер от/до аэропорта.</p>
+                    <a target="blank"
+                        href="https://www.booking.com/hotel/ru/imperial-cherkessk.ru.html#room_239462506"><button
+                            class="bookButton section-rooms-container-sliderBox-descr-button">
+                            <p>посмотреть</p>
+                        </button></a>
+                </div>
+                <div class="section-rooms-container-sliderBox-rightSide">
+                    <button class='nextSlideButton'><i
+                            class="fas fa-angle-right"></i></button>
+                    <div class="section-rooms-container-sliderBox-rightSide-advantages">
+                        <div>
+                            <i class="fas fa-cube"></i>
+                            <p>26 м<sup>2</sup></p>
+                        </div>
+                        <div>
+                            <i class="fas fa-bed"></i>
+                            <p>1 Односпальная кровать<br>и 1 очень большая<br>двуспальная кровать</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-hotel"></i>
+                            <p>Вид на<br>город</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-snowflake"></i>
+                            <p>Кондиционер</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-tv"></i>
+                            <p>Плоский<br>телевизор</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-wifi"></i>
+                            <p>Бесплатный<br>WiFi</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-shower"></i>
+                            <p>Душ</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-parking"></i>
+                            <p>Бесплатная<br>парковка</p>
+                        </div>
+                    </div>
+                    <div class="section-rooms-container-sliderBox-rightSide-imagePlace">                    
+                        <img class='sliderImg sliderImg6 activeImage' src="img/images/rooms/6/1.jpg">
+                        <img class='sliderImg sliderImg6' src="img/images/rooms/6/2.jpg">
+                        <img class='sliderImg sliderImg6' src="img/images/rooms/6/3.jpg">
+                        <div class="section-rooms-container-sliderBox-rightSide-imagePlace-buttons">
+                            <button class='prevImageButton'><span>&larr;</span></button>
+                            <button class='nextImageButton'><span>&rarr;</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-rooms-container-sliderBox">
+                <div class="section-rooms-container-sliderBox-descr">
+                    <button class='nextSlideButtonFaded'><i
+                        class="fas fa-angle-right"></i></button>
+                    <p class='section-rooms-container-sliderBox-descr-header'>Большой двухместный номер с 1 кроватью</p>
+                    <p class='section-rooms-container-sliderBox-descr-txt'>В нашем уютном двухместном номере вы можете
+                        повесить вещи в шкаф, отдохнуть на двуспальной или большой двуспальной кровати, заварить чай в
+                        электрическом чайнике, присесть на диван-кровать посмотреть интересующий канал на телевизоре с
+                        плоским экраном. В вашем распоряжении кабельные и спутниковые каналы. Для вашего удобства в
+                        номере установлен кондиционер и москитная сетка на окнах, чтобы ничто не мешало вам дышать
+                        свежим воздухом. Если захотите пообедать или поужинать у себя в номере, можете воспользоваться
+                        холодильником и обеденным уголком. О том, что приготовить на завтрак можете не переживать: для
+                        гостей отеля Империал за отдельную плату сервируется континентальный завтрак. В номере есть
+                        собственная ванная
+                        комната с феном и бесплатными туалетно-косметическими принадлежностями. Также к услугам гостей
+                        Бесплатная частная парковка и платный трансфер от/до аэропорта.</p>
+                    <a target="blank"
+                        href="https://www.booking.com/hotel/ru/imperial-cherkessk.ru.html#room_239462508"><button
+                            class="bookButton section-rooms-container-sliderBox-descr-button">
+                            <p>посмотреть</p>
+                        </button></a>
+                </div>
+                <div class="section-rooms-container-sliderBox-rightSide">
+                    <button class='nextSlideButton'><i
+                            class="fas fa-angle-right"></i></button>
+                    <div class="section-rooms-container-sliderBox-rightSide-advantages">
+                        <div>
+                            <i class="fas fa-cube"></i>
+                            <p>26 м<sup>2</sup></p>
+                        </div>
+                        <div>
+                            <i class="fas fa-bed"></i>
+                            <p>1 Большая двуспальная<br>кровать или 1<br>двуспальная кровать</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-hotel"></i>
+                            <p>Вид на<br>город</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-snowflake"></i>
+                            <p>Кондиционер</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-tv"></i>
+                            <p>Плоский<br>телевизор</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-wifi"></i>
+                            <p>Бесплатный<br>WiFi</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-shower"></i>
+                            <p>Душ</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-parking"></i>
+                            <p>Бесплатная<br>парковка</p>
+                        </div>
+                    </div>
+                    <div class="section-rooms-container-sliderBox-rightSide-imagePlace">                       
+                        <img class='sliderImg sliderImg7 activeImage' src="img/images/rooms/7/1.jpg">
+                        <img class='sliderImg sliderImg7' src="img/images/rooms/7/2.jpg">
+                        <img class='sliderImg sliderImg7' src="img/images/rooms/7/3.jpg">
+                        <div class="section-rooms-container-sliderBox-rightSide-imagePlace-buttons">
+                            <button class='prevImageButton'><span>&larr;</span></button>
+                            <button class='nextImageButton'><span>&rarr;</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-rooms-container-sliderBox">
+                <div class="section-rooms-container-sliderBox-descr">
+                    <button class='nextSlideButtonFaded'><i
+                        class="fas fa-angle-right"></i></button>
+                    <p class='section-rooms-container-sliderBox-descr-header'>Улучшенный трёхместный номер</p>
+                    <p class='section-rooms-container-sliderBox-descr-txt'>В нашем уютном трёхместном номере вы можете
+                        повесить вещи в шкаф, отдохнуть на одной из 3 двуспальных кроватей, заварить чай в электрическом
+                        чайнике и посмотреть интересующий канал на телевизоре с плоским экраном. В вашем распоряжении
+                        кабельные и спутниковые каналы. Для вашего удобства в номере установлен кондиционер и москитная
+                        сетка на окнах, чтобы ничто не мешало вам дышать свежим воздухом, наслаждаясь Видом внутреннего
+                        дворика. Если захотите пообедать или поужинать у себя в номере, можете воспользоваться
+                        холодильником и обеденным уголком. О том, что приготовить на завтрак можете не переживать: для
+                        гостей отеля Империал за отдельную плату сервируется континентальный завтрак. В номере есть
+                        собственная ванная
+                        комната с феном и бесплатными туалетно-косметическими принадлежностями. Также к услугам гостей
+                        Бесплатная частная парковка и платный трансфер от/до аэропорта.</p>
+                    <a target="blank"
+                        href="https://www.booking.com/hotel/ru/imperial-cherkessk.ru.html#room_239462509"><button
+                            class="bookButton section-rooms-container-sliderBox-descr-button">
+                            <p>посмотреть</p>
+                        </button></a>
+                </div>
+                <div class="section-rooms-container-sliderBox-rightSide">
+                    <button class='nextSlideButton'><i
+                            class="fas fa-angle-right"></i></button>
+                    <div class="section-rooms-container-sliderBox-rightSide-advantages">
+                        <div>
+                            <i class="fas fa-cube"></i>
+                            <p>26 м<sup>2</sup></p>
+                        </div>
+                        <div>
+                            <i class="fas fa-bed"></i>
+                            <p>3 Двуспальные кровати<br>или 1 двуспальная<br>кровать</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-hotel"></i>
+                            <p>Вид на<br>город</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-tree"></i>
+                            <p>Вид на<br>внутренний<br>дворик</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-snowflake"></i>
+                            <p>Кондиционер</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-tv"></i>
+                            <p>Плоский<br>телевизор</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-wifi"></i>
+                            <p>Бесплатный<br>WiFi</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-shower"></i>
+                            <p>Душ</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-parking"></i>
+                            <p>Бесплатная<br>парковка</p>
+                        </div>
+                    </div>
+                    <div class="section-rooms-container-sliderBox-rightSide-imagePlace">   
+                        <img class='sliderImg sliderImg8 activeImage' src="img/images/rooms/8/1.jpg">
+                        <img class='sliderImg sliderImg8' src="img/images/rooms/8/2.jpg">
+                        <img class='sliderImg sliderImg8' src="img/images/rooms/8/3.jpg">
+                        <div class="section-rooms-container-sliderBox-rightSide-imagePlace-buttons">
+                            <button class='prevImageButton'><span>&larr;</span></button>
+                            <button class='nextImageButton'><span>&rarr;</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-rooms-container-sliderBox">
+                <div class="section-rooms-container-sliderBox-descr">
+                    <button class='nextSlideButtonFaded'><i
+                        class="fas fa-angle-right"></i></button>
+                    <p class='section-rooms-container-sliderBox-descr-header'>Представительский люкс</p>
+                    <p class='section-rooms-container-sliderBox-descr-txt'>В нашем уютном представительском люксе вы
+                        можете повесить вещи в шкаф, отдохнуть на очень большой двуспальной кровати, заварить чай в
+                        электрическом чайнике, присесть на диван-кровать и посмотреть интересующий канал на телевизоре с
+                        плоским экраном. В вашем распоряжении кабельные и спутниковые каналы. Для вашего удобства в
+                        номере установлен кондиционер и москитная сетка на окнах, чтобы ничто не мешало вам дышать
+                        свежим воздухом, наслаждаясь Видом внутреннего дворика. Если захотите пообедать или поужинать у
+                        себя в номере, можете воспользоваться холодильником и обеденным уголком. О том, что приготовить
+                        на завтрак можете не переживать: для гостей отеля Империал за отдельную плату сервируется
+                        континентальный завтрак.
+                        В номере есть собственная ванная комната с феном и бесплатными туалетно-косметическими
+                        принадлежностями. Также к услугам гостей бесплатная частная парковка и платный трансфер от/до
+                        аэропорта.</p>
+                    <a target="blank"
+                        href="https://www.booking.com/hotel/ru/imperial-cherkessk.ru.html#room_239462510"><button
+                            class="bookButton section-rooms-container-sliderBox-descr-button">
+                            <p>посмотреть</p>
+                        </button></a>
+                </div>
+                <div class="section-rooms-container-sliderBox-rightSide">
+                    <button class='nextSlideButton'><i
+                            class="fas fa-angle-right"></i></button>
+                    <div class="section-rooms-container-sliderBox-rightSide-advantages">
+                        <div>
+                            <i class="fas fa-cube"></i>
+                            <p>30 м<sup>2</sup></p>
+                        </div>
+                        <div>
+                            <i class="fas fa-bed"></i>
+                            <p>1 Очень большая<br>двуспальная кровать и<br>1 диван-кровать</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-hotel"></i>
+                            <p>Вид на<br>город</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-tree"></i>
+                            <p>Вид на<br>внутренний<br>дворик</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-snowflake"></i>
+                            <p>Кондиционер</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-tv"></i>
+                            <p>Плоский<br>телевизор</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-wifi"></i>
+                            <p>Бесплатный<br>WiFi</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-bath"></i>
+                            <p>Гидромассажная<br>ванна</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-parking"></i>
+                            <p>Бесплатная<br>парковка</p>
+                        </div>
+                    </div>
+                    <div class="section-rooms-container-sliderBox-rightSide-imagePlace">
+                        <img class='sliderImg sliderImg9 activeImage' src="img/images/rooms/9/1.jpg">
+                        <img class='sliderImg sliderImg9' src="img/images/rooms/9/2.jpg">
+                        <img class='sliderImg sliderImg9' src="img/images/rooms/9/3.jpg">
+                        <img class='sliderImg sliderImg9' src="img/images/rooms/9/4.jpg">
+                        <div class="section-rooms-container-sliderBox-rightSide-imagePlace-buttons">
+                            <button class='prevImageButton'><span>&larr;</span></button>
+                            <button class='nextImageButton'><span>&rarr;</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-rooms-container-sliderBox">
+                <div class="section-rooms-container-sliderBox-descr">
+                    <button class='nextSlideButtonFaded'><i
+                        class="fas fa-angle-right"></i></button>
+                    <p class='section-rooms-container-sliderBox-descr-header'>Президентский люкс</p>
+                    <p class='section-rooms-container-sliderBox-descr-txt'>В нашем уютном президентском люксе вы можете
+                        повесить вещи в шкаф, отдохнуть на очень большой двуспальной кровати, заварить чай в
+                        электрическом чайнике и посмотреть интересующий канал на телевизоре с плоским экраном. В вашем
+                        распоряжении кабельные и спутниковые каналы. В качестве приятного бонуса, номер оснащён
+                        диваном-кроватью и ковровым покрытием. Для вашего удобства в номере установлен кондиционер и
+                        москитная сетка на окнах, чтобы ничто не мешало вам дышать свежим воздухом, наслаждаясь Видом
+                        внутреннего дворика. Если захотите пообедать или поужинать у себя в номере, можете
+                        воспользоваться холодильником и обеденным уголком. О том, что приготовить на завтрак можете не
+                        переживать: для гостей отеля Империал за отдельную плату сервируется континентальный завтрак. В
+                        номере есть
+                        собственная ванная комната с феном и бесплатными туалетно-косметическими принадлежностями. Также
+                        к услугам гостей бесплатная частная парковка и платный трансфер от/до аэропорта.</p>
+                    <a target="blank"
+                        href="https://www.booking.com/hotel/ru/imperial-cherkessk.ru.html#room_239462511"><button
+                            class="bookButton section-rooms-container-sliderBox-descr-button">
+                            <p>посмотреть</p>
+                        </button></a>
+                </div>
+                <div class="section-rooms-container-sliderBox-rightSide">
+                    <button class='nextSlideButton'><i
+                            class="fas fa-angle-right"></i></button>
+                    <div class="section-rooms-container-sliderBox-rightSide-advantages">
+                        <div>
+                            <i class="fas fa-cube"></i>
+                            <p>30 м<sup>2</sup></p>
+                        </div>
+                        <div>
+                            <i class="fas fa-bed"></i>
+                            <p>1 Очень большая<br>двуспальная кровать</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-hotel"></i>
+                            <p>Вид на<br>город</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-tree"></i>
+                            <p>Вид на<br>внутренний<br>дворик</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-snowflake"></i>
+                            <p>Кондиционер</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-tv"></i>
+                            <p>Плоский<br>телевизор</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-wifi"></i>
+                            <p>Бесплатный<br>WiFi</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-shower"></i>
+                            <p>Душ</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-parking"></i>
+                            <p>Бесплатная<br>парковка</p>
+                        </div>
+                    </div>
+                    <div class="section-rooms-container-sliderBox-rightSide-imagePlace">
+                        <img class='sliderImg sliderImg10 activeImage' src="img/images/rooms/10/1.jpg">
+                        <img class='sliderImg sliderImg10' src="img/images/rooms/10/2.jpg">
+                        <img class='sliderImg sliderImg10' src="img/images/rooms/10/3.jpg">
+                        <img class='sliderImg sliderImg10' src="img/images/rooms/10/4.jpg">
+                        <div class="section-rooms-container-sliderBox-rightSide-imagePlace-buttons">
+                            <button class='prevImageButton'><span>&larr;</span></button>
+                            <button class='nextImageButton'><span>&rarr;</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='breakfast' class="mySection section-breakfast">
+        <div class="myContainer section-breakfast-container">
+            <div id='BreakfastLeftSide' class="section-breakfast-container-leftSide">
+                <img src="img/images/breakfast.jpg">
+            </div>
+            <div id='BreakfastRightSide' class="section-breakfast-container-rightSide">
+                <p class="section-breakfast-container-rightSide-header">Завтрак</p>
+                <div class="section-breakfast-container-rightSide-txt">
+                    Во время проживания гости отеля Империал за отдельную плату могут насладиться вкусным завтраком
+                    <ul class='section-breakfast-container-rightSide-txt-list'>
+                        <li class='section-breakfast-container-rightSide-txt-list-li'>Варианты завтрака :</li>
+                        <li class='section-breakfast-container-rightSide-txt-list-li'>Континентальный</li>
+                        <li class='section-breakfast-container-rightSide-txt-list-li'>Американский</li>
+                        <li class='section-breakfast-container-rightSide-txt-list-li'>Вегетарианский</li>
+                        <li class='section-breakfast-container-rightSide-txt-list-li'>Безглютеновый</li>
+                        <li class='section-breakfast-container-rightSide-txt-list-li'>Халяльный</li>
+                        <li class='section-breakfast-container-rightSide-txt-list-li'>Кошерный</li>
+                        <li class='section-breakfast-container-rightSide-txt-list-li'>По меню</li>
+                    </ul>
+                </div>
+                <div class="section-breakfast-container-rightSide-button">
+                    <a target="blank"
+                        href="https://www.booking.com/hotel/ru/imperial-cherkessk.ru.html#availability_target"><button
+                            class="bookButton">
+                            <p>забронировать</p>
+                        </button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='contact' class="mySection section-contact">
+        <div class="myContainer section-contact-container">
+            <p class='section-contact-container-header'>Связаться с нами</p>
+            <div class="section-contact-container-descr">
+                <div id='yandexMap' class="section-contact-container-descr-map"></div>
+                <p class="section-contact-container-descr-adress">Ленина 336, Черкесск, Россия</p>
+                <p class="section-contact-container-descr-mailnum">imperial09.RU@yandex.ru <span class='slash'>|</span> <span
+                        class='num'>8-928-431-09-09</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="mySection section-footer">
+        <div class="myContainer section-footer-container">
+            <p class='section-footer-container-txt'>2021 © отель ''Империал''</p>
+            <p class='section-footer-container-txt'>Сайт разработала <span>веб-студия ''RMI''</span></p>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
